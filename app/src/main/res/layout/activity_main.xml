@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper6">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/send_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0fff"
+            android:textColor="#fff"
+            android:alpha="0.7"
+            android:text="获取当前位置信息"/>
+
+        <Button
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:background="#0fff"
+            android:textColor="#fff"
+            android:alpha="0.8"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:text="广州"
+            />
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffff"
+            android:alpha="0.8"
+            android:text="更新时间：2020-05-03 13：02"
+            android:layout_marginBottom="50dp"
+            />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:foregroundGravity="center_vertical"
+            android:src="@drawable/location_gray"
+            android:id="@+id/imageView"
+            android:layout_alignTop="@+id/tv_city"
+            android:layout_toStartOf="@+id/tv_city"
+            android:layout_alignBottom="@+id/tv_city"
+            />
+
+        <TextView
+            android:id="@+id/tv_wea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/tv_tem3"
+            android:text="多云 风向：西南风\n空气污染指数：49"
+     />
+
+        <TextView
+            android:id="@+id/tv_tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="98dp"
+            android:textColor="#fff"
+            android:alpha="0.9"
+            android:text="32"
+           android:layout_marginLeft="120dp"
+            android:layout_marginTop="100dp"
+         />
+
+        <TextView
+            android:id="@+id/tv_tem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:text="℃"
+            android:layout_marginTop="128dp"
+            android:layout_marginLeft="245dp"
+            android:textColor="#fff"
+
+           />
+
+        <TextView
+            android:id="@+id/tv_tem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="23dp"
+            android:textColor="#fff"
+            android:alpha="0.9"
+            android:text="33℃/25℃"
+           android:layout_below="@id/tv_tem"
+            />
+
+        <ImageView
+            android:id="@+id/wea_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/yun"
+            android:layout_marginLeft="245dp"
+             />
+    </RelativeLayout>
+
+
+</LinearLayout>
